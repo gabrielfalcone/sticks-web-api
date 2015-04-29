@@ -1,3 +1,3 @@
-git add --all
+git add --all --verbose
 git commit -m %1
 git push origin master
