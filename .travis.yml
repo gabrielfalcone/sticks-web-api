@@ -13,10 +13,3 @@ rvm:
 
 env:
   - RAILS_ENV=production
-
-before_script:
-
-#script:
-#  - bundle exec rake db:migrate
-
-after_success:
