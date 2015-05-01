@@ -12,11 +12,9 @@ rvm:
   - "2.0.0"
 
 before_install:
-  - "echo [Starting before_install]"
   - "rm Gemfile.lock"
-  - "echo [Ending before_install]"
 
-#deploy:
-#  provider: heroku
-#  api_key: "28af8750-d95e-45c0-97cf-2180e66717e6"
-#  app: sticks-web-api
+deploy:
+  provider: heroku
+  api_key: "28af8750-d95e-45c0-97cf-2180e66717e6"
+  app: sticks-web-api
