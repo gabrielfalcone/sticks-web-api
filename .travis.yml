@@ -10,6 +10,3 @@ notifications:
     on_failure: always
 rvm:
   - "2.0.0"
-
-env:
-  - RAILS_ENV=production
