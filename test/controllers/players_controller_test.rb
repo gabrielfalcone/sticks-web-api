@@ -18,7 +18,7 @@ class PlayersControllerTest < ActionController::TestCase
 
   test "should create player" do
     assert_difference('Player.count') do
-      post :create, player: { email: @player.email }
+      post :create, player: { email: @player.email, name: @player.name }
     end
 
     assert_redirected_to player_path(assigns(:player))
@@ -35,7 +35,7 @@ class PlayersControllerTest < ActionController::TestCase
   end
 
   test "should update player" do
-    patch :update, id: @player, player: { email: @player.email }
+    patch :update, id: @player, player: { email: @player.email, name: @player.name }
     assert_redirected_to player_path(assigns(:player))
   end
 
