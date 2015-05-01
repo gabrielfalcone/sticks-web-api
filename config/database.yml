@@ -17,15 +17,21 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
-  database: db/test.sqlite3
+#  <<: *default
+#  database: db/test.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: sticks_test
+  pool: 5
+  username: sticks_user
+  password:
 
 production:
 #  <<: *default
 #  database: db/production.sqlite3
   adapter: postgresql
   encoding: unicode
-  database: sticks
+  database: sticks_prod
   pool: 5
   username: sticks_user
   password:
