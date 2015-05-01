@@ -11,6 +11,7 @@ notifications:
 rvm:
   - "2.0.0"
 before_script:
+  - export RAILS_ENV=production
   - gem install sqlite3
 deploy:
   provider: heroku
