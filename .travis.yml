@@ -12,7 +12,7 @@ rvm:
   - "2.0.0"
 
 before_script:
-  - cp Gemfile.travis.lock Gemfile.lock
+  - rm Gemfile.lock
 
 #deploy:
 #  provider: heroku
