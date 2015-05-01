@@ -12,7 +12,9 @@ rvm:
   - "2.0.0"
 
 before_install:
-  - rm Gemfile.lock
+  - "echo Starting before_install"
+  - "rm Gemfile.lock"
+  - "echo Ending before_install"
 
 #deploy:
 #  provider: heroku
