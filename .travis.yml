@@ -10,9 +10,7 @@ notifications:
     on_failure: always
 rvm:
   - "2.0.0"
-before_script:
-  #- export RAILS_ENV=production
-deploy:
-  provider: heroku
-  api_key: "28af8750-d95e-45c0-97cf-2180e66717e6"
-  app: sticks-web-api
+#deploy:
+#  provider: heroku
+#  api_key: "28af8750-d95e-45c0-97cf-2180e66717e6"
+#  app: sticks-web-api
