@@ -11,6 +11,9 @@ notifications:
 rvm:
   - "2.0.0"
 
+env:
+  - RAILS_ENV=production
+
 before_script:
 
 script:
