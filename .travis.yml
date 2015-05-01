@@ -16,7 +16,7 @@ env:
 
 before_script:
 
-script:
-  - bundle exec rake db:migrate
+#script:
+#  - bundle exec rake db:migrate
 
 after_success:
